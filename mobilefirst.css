@@ -1,0 +1,125 @@
+@charset "UTF-8";
+/*ba0515 cor01
+f6222b cor 02
+cfeaf7 cor 03
+64a6d7 cor 04
+*/
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+body,html{
+    background-image: linear-gradient(to right, #a00411, #630d14, #b92f36 );
+    height: 100vh;
+    width: 100vw;
+}
+main{
+    position: relative;
+    height: 100vh;
+    width: 100vw;
+
+}
+section#login{
+    position: absolute;
+    height: 550px;
+    width: 250px;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    background-color: white;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.632);
+
+}
+section#login > div#imagem{
+    background: url(imagens/floresta.jpg) no-repeat;
+    background-size: cover;
+    height: 50%;
+    background-position: center;
+}
+section#login > div#formulario{
+    display: block;
+    padding: 5px;
+}
+#formulario > h1 {
+    text-align: center;
+    
+}
+#formulario > p{
+    text-align: justify;
+}
+.campo{
+    margin: 5px 0px;
+    background-color: #c30818;
+    border-radius: 5px;
+}
+.campo i{
+    color: #ffffff;
+    font-size: 2em;
+    
+    padding-left: 3px;
+    transform: translateY(8px);
+    
+    
+}
+.campo input{
+    width: calc(100% - 40px);
+    height: 39px;
+    border-radius: 5px;
+    border: none;
+    background-color: #f6c8cb;
+    transform: translateY(-4px);
+    border: 1px solid black;
+    padding-right: 3px;
+}
+.campo input:focus-within{
+    background-color: #ffffff;
+    
+
+}
+label{
+    display: none;
+}
+form > input {
+    display: block;
+    font-size: 1em;
+    width: 100%;
+    height: 35px;
+    margin: 7px 0px;
+    background-color:#a00411 ;
+    border: none;
+    border-radius: 5px;
+    text-transform: uppercase;
+    font-family: fantasy;
+    font-weight: lighter;
+    
+    cursor: pointer;
+}
+form > input:hover {
+    background-color: #c30818;
+    
+}
+.esqueci {
+    display: block;
+    padding: 5px;
+    text-align: center;
+    font-size: 1em;
+    margin: 7px 0px;
+    width: 100%;
+    height: 35px;
+    text-decoration: none;
+    background-color:#ffffff ;
+    color: #a00411;
+    border: 1px solid #a00411;
+    border-radius: 5px;
+}
+.esqueci:hover{
+    background-color: #c30818;
+    color: black;
+}
+#mail{
+    font-size: 1em;
+    transform: translateY(2px);
+}
